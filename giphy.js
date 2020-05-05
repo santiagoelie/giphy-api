@@ -18,7 +18,7 @@ $(document).on("click", ".btn", function() {
   var params = {
     q: query,
     limit: 10,
-    api_key: "aFFKTuSMjd6j0wwjpFCPXZipQbcnw3vB",
+    api_key: "m4N8IifU99VoKj6xwQgQDNJ85WJorXP8",
     fmt: "json"
   };
   if ($(this).hasClass("search-btn")) {
