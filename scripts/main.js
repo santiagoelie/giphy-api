@@ -3,7 +3,7 @@ const gifForm = $("#gif-form");
 gifForm.submit(e => {
   e.preventDefault();
   const searchTerm = $(".search").val();
-  const url = `https://api.giphy.com/v1/gifs/search?api_key=Ab2k8Getoartsbv2vWXQ22MNQ7c6Ip10&q=&limit=25&offset=0&rating=G&lang=en`;
+  const url = `https://api.giphy.com/v1/gifs/search?&q=${searchTerm}&limit=80&api_key=3mIxmBZUIIPyb8R69gtxaW8Hsh74dFKV`;
   $.get(url)
     .done(resp => {
       showGiphs(resp.data.slice(0, 40));
