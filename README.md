@@ -1,13 +1,13 @@
 # giphy-api
-# Project 2: Website with a Search Engine
+## Project 2: Website with a Search Engine
 ____________________________________________
-# User Stories:
-# 1.  
-# 2. 
+#### User Stories:
+###### 1.  
+###### 2. 
 
-# Wireframes:
+#### Wireframes:
 
-# Name: Eliezer Santiago
+### Name: Eliezer Santiago
 Overview/Description of Project: GIPHY API Search
 Details: 
 Technologies used: HTML, CSS/SASS, JavaScript/jQuery
