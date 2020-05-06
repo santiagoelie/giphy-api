@@ -3,7 +3,7 @@ const gifForm = $("#gif-form");
 gifForm.submit(e => {
   e.preventDefault();
   const searchTerm = $(".search").val();
-  const url = `https://api.giphy.com/v1/gifs/search?&q=${searchTerm}&limit=80&api_key=RFXH6dYTaB8KqYtsXqAUUbTqWzPxBpFJ`;
+  const url = `https://api.giphy.com/v1/gifs/search?api_key=RFXH6dYTaB8KqYtsXqAUUbTqWzPxBpFJ&q=dog&limit=25&offset=0&rating=G&lang=en`;
   $.get(url)
     .done(resp => {
       showGiphs(resp.data.slice(0, 40));
@@ -24,3 +24,5 @@ function showGiphs(dataArray) {
     .join("");
   $(".results").html(output);
 }
+
+// ${searchTerm}
