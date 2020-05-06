@@ -3,19 +3,74 @@
 <head>
     <title>GIPHY Search API</title>
     <link rel="stylesheet" href="style.scss" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <div class="title-search-bar">
-        <h1>Giphy API Example</h1>
-        <div id="buttons"></div>
-        <div class="search-bar">
-            <input type="text" name="query" id="user-search" />
-            <input id="submit" type="button" value="Submit" class="btn  btn-sm btn-success" />
-            <input type="button" class="trending btn btn-sm btn-danger" value="See what's trending" />
+ <!-- Navigation -->
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <a class="navbar-brand text-success" href="https://developers.giphy.com/docs/api#quick-start-guide" target="_blank" title="GIPHY API Developer Documentation">GIPHY Search API</a
+          >
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="https://mheerspink75.github.io/GIPHY-API-Search/" title="home">
+                    Home <span class="sr-only">(current)</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="https://github.com/mheerspink75/GIPHY-API-Search" target="_blank" title="GitHub Repository">GitHub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://codepen.io/mheerspink75/pen/yLBOxoa" target="-blank" title="CodePen Wireframe" tabindex="-1">CodePen</a>
+              </li> -->
+            </ul>
+            <form id="gif-form" class="form-inline my-2 my-lg-0">
+              <input class="search form-control mr-sm-2" type="text" placeholder="Search GIPHY" aria-label="Search"/>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+  
+        <!-- Page Content -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="jumbotron col-lg-12 text-center">
+              <h1 class="mt-5">
+                Welcome to GIPHY Search!
+              </h1>
+              <p>Enter a search query and click search to display images...</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <hr>
-    <div id="results"></div>
+      </header>
+  
+      <!-- Search Results  -->
+      <main>
+        <div class="container-fluid col-lg-12 text-center">
+          <div class="results">
+              <img src="https://media.giphy.com/media/54Ya3l8S8y1ggAlzTA/giphy.gif" alt="GIPHY logo"/>
+            <p class="mt-5">
+             Search results display here...
+            </p>
+          </div>
+        </div>
+      </main>
+  
+      <!-- Footer -->
+      <footer class="fixed-bottom navbar navbar-dark bg-dark justify-content-inline">
+        <a
+          class="navbar-brand text-success"
+          href="https://sites.google.com/view/reference-page/project-2"
+          target="_blank"
+          title="Project Requirements Reference"
+          >Google Sites Reference</a
+        >
+      </footer>
 
     <script src="giphy.js" type="text/javascript"></script>
 </body>
