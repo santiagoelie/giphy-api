@@ -3,7 +3,7 @@ const gifForm = $("#gif-form");
 gifForm.submit(e => {
   e.preventDefault();
   const searchTerm = $(".search").val();
-  const url = "https://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=RFXH6dYTaB8KqYtsXqAUUbTqWzPxBpFJ&limit=5";
+  const url = `https://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=RFXH6dYTaB8KqYtsXqAUUbTqWzPxBpFJ&limit=5`;
   $.get(url)
     .done(resp => {
       showGiphs(resp.data.slice(0, 40));
