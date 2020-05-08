@@ -7,10 +7,10 @@ ____________________________________________
 ###### 2. “As a tech lover, I am always post GIF’s on my social media regularly, and always using GIF’s to send replies to all of my friends using chat application. I want an interface that can search GIF’s API, display images and also provide links”
 
 #### Wireframes:
-#### 1. Desktop View:
-        ![](images/giphy_api_desktop_view)
-#### 2. Mobile View:
-
+##### 1. Desktop View:
+![](images/giphy_api_desktop_view.png)
+##### 2. Mobile View:
+![](images/giphy_api_mobile_view.png)
 ### Name: Eliezer Santiago
 Overview/Description of Project: GIPHY API Search
 Details: 
