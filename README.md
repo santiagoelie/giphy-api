@@ -8,7 +8,7 @@ ____________________________________________
 
 #### Wireframes:
 #### 1. Desktop View:
-
+        ![](images/giphy_api_desktop_view)
 #### 2. Mobile View:
 
 ### Name: Eliezer Santiago
